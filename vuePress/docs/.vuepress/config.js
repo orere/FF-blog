@@ -6,27 +6,11 @@ module.exports = {
     base: '/', // 设置站点根路径
     // base: '/FF-blog/',      // 设置站点根路径
     repo: 'https://github.com/orere/FF-blog', // 添加 github 链接
-    // themeConfig: {
-    //     // 添加导航栏
-    //     nav: [
-    //         { text: 'vue', link: '/' },
-    //         { text: 'css', link: '/blog/' },
-    //         { text: 'js', link: '/zhihu/' },
-    //         {
-    //             text: 'github',
-    //             // 这里是下拉列表展现形式。
-    //             items: [
-    //             { text: 'focus-outside', link: 'https://github.com/TaoXuSheng/focus-outside' },
-    //             { text: 'stylus-converter', link: 'https://github.com/TaoXuSheng/stylus-converter' },
-    //             ]
-    //         }
-    //     ],
-    //     // 为以下路由添加侧边栏
-    //     sidebar: ['/', '/git', '/vue']
-    // },
 
     // 对于多级目录的侧边栏，我们需要用使用对象描述的写法，下面的 /git/ 表示在 git 目录，默认指向 /git/README.md 文件
     themeConfig: {
+        sidebarDepth: 2,
+        displayAllHeaders: true,
         // sidebar: {
         //     '/vue/': [
         //         'one',
@@ -82,6 +66,7 @@ module.exports = {
                 // 当前 locale 的 algolia docsearch 选项
                 algolia: {},
                 nav: [
+                    { text: 'vue', link: '/vue/one/' },
                     {
                         text: '选择语言',
                         items: [
@@ -89,57 +74,39 @@ module.exports = {
                             { text: 'English', link: '/en/home/' }
                         ]
                     },
-                    { text: 'vue', link: '/vue/one/' },
                 ],
                 sidebar: [
+                    // '/',
+                    '/home/',
+                    // '/vue/',
+                    // '/vue/one',
                     {
-                        title: 'home',
+                        title: 'vue模块',
                         // collapsable: false,
                         children: [
-                            '/home/',
-                        ]
-                        // '/':[],
-                        // '/home/': [],
-                        // '/vue/': [
-                        //     'one',
-                        // ],
-                        // '/js/': [
-                        //     'one',
-                        // ],
-                    },
-                    {
-                        title: 'vue',
-                        // collapsable: false,
-                        children: [
-                            ['/vue','one']
+                            '/vue/',
+                            // ['/vue/one/','/vue/one/111/']
+                            '/vue/one',
                         ]
                     },
-                    // {
-                    //     title: 'js',
-                    //     // collapsable: false,
-                    //     children: [
-                    //         '/js/','/js/one/'
-                    //     ]
-                    // },
-
                 ],
-                // sidebar: 'auto',
+
+                // 设置多个侧边栏
+                // sidebar: {
+                //     '/home/':[
+                //         '/home/',
+                //     ],
+                //     '/vue/':[
+                //         '/vue/',
+                //         {
+                //             title: 'one',
+                //             children: [
+                //                 '/vue/one/'
+                //             ]
+                //         }
+                //     ]
+                // },
             }
         }
     },
-
-    // locales: {
-        // 键名是该语言所属的子路径
-        // 作为特例，默认语言可以使用 '/' 作为其路径。
-        // '/': {
-        //     lang: 'zh-CN',
-        //     title: 'VuePress',
-        //     description: 'Vue 驱动的静态网站生成器'
-        // },
-        // '/en': {
-        //     lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
-        //     title: 'VuePress',
-        //     description: 'Vue-powered Static Site Generator'
-        // },
-    // }
 }
