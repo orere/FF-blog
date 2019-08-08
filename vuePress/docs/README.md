@@ -13,4 +13,4 @@ actionLink: /vue/one
 # footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
-## HELLO WORLD!
+## HELLO VuePress!

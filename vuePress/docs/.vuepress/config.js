@@ -11,16 +11,6 @@ module.exports = {
     themeConfig: {
         sidebarDepth: 2,
         displayAllHeaders: true,
-        // sidebar: {
-        //     '/vue/': [
-        //         'one',
-        //     ],
-        //     '/js/': [
-        //         'one',
-        //         'four'
-        //     ]
-        // },
-        // sidebar: 'auto',
         locales: {
             '/en/': {
                 selectText: 'Languages',
@@ -76,36 +66,16 @@ module.exports = {
                     },
                 ],
                 sidebar: [
-                    // '/',
                     '/home/',
-                    // '/vue/',
-                    // '/vue/one',
                     {
                         title: 'vue模块',
-                        // collapsable: false,
                         children: [
                             '/vue/',
-                            // ['/vue/one/','/vue/one/111/']
                             '/vue/one',
                         ]
                     },
                 ],
 
-                // 设置多个侧边栏
-                // sidebar: {
-                //     '/home/':[
-                //         '/home/',
-                //     ],
-                //     '/vue/':[
-                //         '/vue/',
-                //         {
-                //             title: 'one',
-                //             children: [
-                //                 '/vue/one/'
-                //             ]
-                //         }
-                //     ]
-                // },
             }
         }
     },
