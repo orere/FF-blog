@@ -74,6 +74,12 @@ module.exports = {
                             '/vue/one',
                         ]
                     },
+                    {
+                        title: '日常懵逼的设计模式',
+                        children: [
+                            '/DesignPatterns/',
+                        ]
+                    },
                 ],
 
             }
