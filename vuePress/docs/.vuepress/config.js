@@ -56,7 +56,7 @@ module.exports = {
                 // 当前 locale 的 algolia docsearch 选项
                 algolia: {},
                 nav: [
-                    { text: 'vue', link: '/vue/one/' },
+                    { text: 'Vue', link: '/vue/one/' },
                     {
                         text: '选择语言',
                         items: [
@@ -68,10 +68,10 @@ module.exports = {
                 sidebar: [
                     '/home/',
                     {
-                        title: 'vue模块',
+                        title: 'Vue模块',
                         children: [
                             '/vue/',
-                            '/vue/one',
+                            '/vue/Vuex',
                         ]
                     },
                     {
