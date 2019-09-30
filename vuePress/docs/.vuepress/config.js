@@ -66,20 +66,25 @@ module.exports = {
                     },
                 ],
                 sidebar: [
-                    '/home/',
+										'/home/',
                     {
-                        title: 'Vue模块',
+												title: 'Vue模块',
                         children: [
                             '/vue/',
-                            '/vue/Vuex',
                         ]
-                    },
-                    {
-                        title: '日常懵逼的设计模式',
-                        children: [
-                            '/DesignPatterns/',
-                        ]
-                    },
+										},
+										{
+											title: 'React模块',
+											children: [
+													'/react/',
+											]
+										},
+                    // {
+                    //     title: '日常懵逼的设计模式',
+                    //     children: [
+                    //         '/DesignPatterns/',
+                    //     ]
+                    // },
                 ],
 
             }
